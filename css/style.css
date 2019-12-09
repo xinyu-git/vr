@@ -1,0 +1,84 @@
+@charset "utf-8";
+.wrap{width: 100%;height: 100%;position: relative;}
+.head{width: 100%;height:2.43rem;background: url(../images/bg.jpg) no-repeat center;background-size: 100% 100%;display: flex;flex-direction: column;justify-content: center;}
+.head h1{font-size:0.3rem;color: #fff; }
+.head p{font-size:0.24rem;color: #cc3500; margin-top: 0.2rem;}
+.head h1,.head p{padding:0 0.2rem;}
+.actBtnWrap{margin:0.15rem auto 0.3rem;width: 7.34rem;font-size: 0.24rem;color: #fff;}
+.actBtnWrap a{float: left;width: 3.65rem;height: 1.18rem;background: url(../images/btnbg.png) no-repeat center;background-size: 100% 100%;margin:0 0.01rem;display: flex;justify-content: center;align-items: center;}
+.actBtnWrap a i{width:0.4rem;height: 0.36rem; margin-right: 0.05rem;}
+.actBtn1 i{background: url(../images/ico1.png) no-repeat center;background-size: 100% 100%;}
+.actBtn2 i{background: url(../images/ico2.png) no-repeat center;background-size: 100% 100%;}
+.adWrap{width: 7.28rem;margin:0 auto;}
+.adWrap a{display: block;margin-bottom: 0.1rem;}
+.adWrap a img{width:100%;}
+
+
+
+/*门店信息*/
+.conContainer{padding:0.3rem 0;}
+.headerBox{font-size: 0.3rem;color: #222;padding:0 0.3rem 0 0.6rem;margin-bottom: 0.2rem;position: relative;}
+.headerBox a{width:0.17rem;height:0.3rem;position: absolute;left: 0.3rem;top: 0.05rem;background: url(../images/back.png) no-repeat center;background-size:100% 100%;}
+.liveCity{text-align: center;font-size: 0.3rem;color: #8e8e8e;height: 0.6rem;line-height: 0.6rem;border-bottom: 0.02rem solid #f5a14d;}
+.cityName i{display: inline-block;background: url(../images/ico3.png) no-repeat right center;background-size: 0.3rem 0.17rem;padding-right: 0.35rem;}
+.storesList{padding:0 0.3rem;}
+.storesList li{height:2.8rem;padding-top:0.25rem;font-size:0.3rem;color:#7e7e7e;border-bottom: 0.02rem solid #f2f2f2;  }
+.storesList li h2{color:#222;margin-bottom:0.6rem;  }
+.storesTime{background: url(../images/ico4.png) no-repeat left center;background-size: 0.33rem 0.34rem;padding-left:0.5rem; margin-right:0.6rem; }
+.storesPhone{background: url(../images/ico5.png) no-repeat left center;background-size: 0.41rem 0.36rem;padding-left:0.5rem;color: #f5a14d; }
+.storesAddress{background: url(../images/ico6.png) no-repeat left center;background-size: 0.31rem 0.39rem;padding-left:0.5rem;}
+.storesList p{margin-bottom:0.2rem;}
+
+/*城市列表*/
+.letter{width:auto;position:fixed;top:10%;right:0.15rem;text-align:center;}
+.letter ul{font-size: 0.24rem;color:#7e7e7e;}
+.letter ul li{margin:0.15rem 0;}
+.city{padding:0 0.3rem;font-size:0.24rem;}
+.city-list{width:100%;border-bottom:1px solid #f2f2f2;}
+.city-list .city-letter{display:inline-block;padding:0.15rem 0;width:100%;color:#7e7e7e; }
+.city-list p{color:#222222;width:95%;height:0.7rem;line-height:0.7rem;cursor:pointer;}
+
+/*领取页面*/
+.getContainer{font-size:0.3rem; }
+.account{text-align: right;color:#cc3500; padding:0.3rem 0.2rem;border-bottom: 0.01rem solid #999999;}
+.voucher{width: 100%;height: 2.43rem;padding:0 0.2rem;background: url(../images/bg.jpg) no-repeat center;background-size: 100% 100%;display: flex;flex-direction: column;justify-content: center;font-size:0.3rem;align-items: center;margin-bottom:0.4rem;color:#fff;}
+.voucher span{padding:0.15rem 0;}
+.voucherNumber{font-weight: bold;color: #fff;}
+.voucherNumber em{font-size: 0.5rem;color: #cc3500;}
+.voucherPassword{color: #cc3500;}
+.voucherTips{padding:0.2rem 0.3rem;}
+/* iphone4 */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2){
+	
+}
+/* iphone5 */
+@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2){
+	
+}
+/*竞猜弹窗*/
+.tsInfo h2{font-size:0.4rem; }
+.tsInfo .p p{text-align: left;margin-bottom: 0.2rem;}
+/*.tsInfo .p .radioInput{width: 0.15rem;height: 0.38rem;line-height: 0.38rem;margin:0 0.1rem;}*/
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 0.8em;
+    height: 0.8em;
+    padding:0.2em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    text-indent: .15em;
+    line-height: 1; 
+   	background: #fff;
+}
+input[type="radio"]:checked + label::before {
+    background-color: #211c1c;
+    background-clip: content-box;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
